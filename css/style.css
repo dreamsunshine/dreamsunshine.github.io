@@ -155,7 +155,7 @@ body {
   float: right;
 }
 #pagination {
-  margin: 0;
+  margin: 50px 0 0 0;
   padding: 0;
 }
 a {
@@ -202,7 +202,7 @@ a:hover {
   padding-right: 10px;
   font-family: FontAwesome;
 }
-#pagination .next:before {
+#pagination .next:after {
   content: '\f054';
   padding-left: 10px;
   font-family: FontAwesome;
