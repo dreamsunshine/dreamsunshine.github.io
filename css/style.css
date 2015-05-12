@@ -154,11 +154,58 @@ body {
 .alignright {
   float: right;
 }
+#pagination {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #0085ff;
+}
+a:hover {
+  color: #102b6a;
+}
 .clear {
   clear: both;
 }
 #container {
   position: relative;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+#pagination a {
+  display: block;
+  padding: 5px 10px;
+  background: #ddd;
+  color: #777;
+  font-family: Helvetica Neue, Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+  text-shadow: 0 0 1px #fff;
+  margin-bottom: 50px;
+}
+#pagination a:hover {
+  background: #0085ff;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+}
+#pagination .prev:before {
+  content: '\f053';
+  padding-right: 10px;
+  font-family: FontAwesome;
+}
+#pagination .next:before {
+  content: '\f054';
+  padding-left: 10px;
+  font-family: FontAwesome;
 }
 .mobile-nav-on {
   overflow: hidden;
