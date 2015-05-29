@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>dreamsunshine</title>
+  <title>WebGL自学：添加颜色 | dreamsunshine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="dreamsunshine的博客,hexo,nodejs,python">
-<meta property="og:type" content="website">
-<meta property="og:title" content="dreamsunshine">
-<meta property="og:url" content="https://dreamsunshine.github.io/index.html">
+  <meta name="description" content="要为三角形上色，就要为它指定颜色。颜色和顶点位置一样，我们用一个数组表示：    123456var jsArrayColor=[1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0];//浮点数表示颜色分量时范围为[0.0,1.0].
+由于顶点的属性无法在着色片段器中访问,要使用varying变量作为桥梁。    -首先在顶点着色器定义一个属性变量，用来接收各个顶点的颜色。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WebGL自学：添加颜色">
+<meta property="og:url" content="https://dreamsunshine.github.io/2015/05/29/webgl-1/index.html">
 <meta property="og:site_name" content="dreamsunshine">
-<meta property="og:description" content="dreamsunshine的博客,hexo,nodejs,python">
+<meta property="og:description" content="要为三角形上色，就要为它指定颜色。颜色和顶点位置一样，我们用一个数组表示：    123456var jsArrayColor=[1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0];//浮点数表示颜色分量时范围为[0.0,1.0].
+由于顶点的属性无法在着色片段器中访问,要使用varying变量作为桥梁。    -首先在顶点着色器定义一个属性变量，用来接收各个顶点的颜色。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="dreamsunshine">
-<meta name="twitter:description" content="dreamsunshine的博客,hexo,nodejs,python">
+<meta name="twitter:title" content="WebGL自学：添加颜色">
+<meta name="twitter:description" content="要为三角形上色，就要为它指定颜色。颜色和顶点位置一样，我们用一个数组表示：    123456var jsArrayColor=[1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0];//浮点数表示颜色分量时范围为[0.0,1.0].
+由于顶点的属性无法在着色片段器中访问,要使用varying变量作为桥梁。    -首先在顶点着色器定义一个属性变量，用来接收各个顶点的颜色。">
   
     <link rel="alternative" href="/atom.xml" title="dreamsunshine" type="application/atom+xml">
   
@@ -61,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-webgl-1" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-webgl-1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/05/29/webgl-1/" class="article-date">
   <time datetime="2015-05-29T07:28:24.000Z" itemprop="datePublished">2015-05-29</time>
@@ -80,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/05/29/webgl-1/">WebGL自学：添加颜色</a>
+    <h1 class="article-title" itemprop="name">
+      WebGL自学：添加颜色
     </h1>
   
 
@@ -106,201 +107,35 @@
     </footer>
   </div>
   
-</article>
-
-
-
-  
-    <article id="post-webgl-0-md" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/05/25/webgl-0-md/" class="article-date">
-  <time datetime="2015-05-25T09:22:17.000Z" itemprop="datePublished">2015-05-25</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/WebGL/">WebGL</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
+    <nav id="pagination" >
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/05/25/webgl-0-md/">WebGL自学：开始</a>
-    </h1>
-  
-
-      </header>
+    <a href="/2015/05/25/webgl-0-md/" class="alignright next" >下一页</a>
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>一直想学习一下WebGL,奈何总是比较懒，现在开始一点点的学习，先走过前人的脚步吧！WebGL作为现代浏览器的一项新的技术，学习是很有必要的，下面开始折腾！</p>
-        
-          <p class="article-more-link">
-            <a href="/2015/05/25/webgl-0-md/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dreamsunshine.github.io/2015/05/25/webgl-0-md/" data-id="cia9dc3aa000il4gksx0rbx77" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebGL/">WebGL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html5/">html5</a></li></ul>
-
-    </footer>
-  </div>
+    <div class="clearfix"></div>
+</nav>
   
 </article>
 
 
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/05/15/hello-world/" class="article-date">
-  <time datetime="2015-05-15T08:56:35.000Z" itemprop="datePublished">2015-05-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/05/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dreamsunshine.github.io/2015/05/15/hello-world/" data-id="cia9dc3am000tl4gkdvmbwvqf" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-socket-md" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/05/14/socket-md/" class="article-date">
-  <time datetime="2015-05-14T06:51:48.000Z" itemprop="datePublished">2015-05-14</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/node-js/">node.js</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/05/14/socket-md/">node.js+socket.io搭建多人聊天室</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>随着websocket技术的运用增多，在线聊天室成为很多网站的运用技术。本篇记录一下学习过程，以解惑之。</p>
-        
-          <p class="article-more-link">
-            <a href="/2015/05/14/socket-md/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dreamsunshine.github.io/2015/05/14/socket-md/" data-id="cia9dc3af000ml4gk9qarpusc" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node-js/">node.js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/socket-io/">socket.io</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-新的开始" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/05/08/新的开始/" class="article-date">
-  <time datetime="2015-05-08T03:25:10.000Z" itemprop="datePublished">2015-05-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/日志/">日志</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/05/08/新的开始/">新的开始</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这是新的开始，我用hexo创建了第一篇文章。
-        
-          <p class="article-more-link">
-            <a href="/2015/05/08/新的开始/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dreamsunshine.github.io/2015/05/08/新的开始/" data-id="cia9dc39r0002l4gkojz5gdxy" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/node博客/">node博客</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开始/">开始</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/我/">我</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-webgl-1" data-title="WebGL自学：添加颜色" data-url="https://dreamsunshine.github.io/2015/05/29/webgl-1/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'dreamsunshine'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
   
 </section>
         
